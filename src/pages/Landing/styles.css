@@ -8,14 +8,24 @@
     width: 177px;
     height: 355px;
     background-color: #151515;
+
+    transition: .5s;
+    cursor: pointer;
+
 }
 
-.cards.characters .card:hover {
 
+.cards.characters .card:hover img{
+    transition: .3s;
+    transform: scale(1.1)
 }
 
 .cards.characters .card .card-thumb-frame{
     position: relative;
+    width: 177px;
+    height: 210px;
+    overflow: hidden;
+
 }
 
 .cards.characters .card .card-thumb-frame::after{
