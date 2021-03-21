@@ -1,19 +1,30 @@
+#page-landing #page-landing-content h1{
+    display: flex;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color-black);
+    text-transform: uppercase;
+    justify-content: center;
+    padding-top: 68px;
+    padding-bottom: 40px;
+}
+
 .cards.characters{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    column-gap: 46px;
+    row-gap: 70px;
+    grid-template-columns: repeat(auto-fill,minmax(177px, 177px));
+    justify-content: center;
 }
 
 .cards.characters .card {
-    width: 177px;
     height: 355px;
-    background-color: #151515;
+    background-color: var(--color-black);
+    border-radius: 30px;
 
     transition: .5s;
     cursor: pointer;
-
 }
-
 
 .cards.characters .card:hover img{
     transition: .3s;
@@ -33,7 +44,7 @@
     height: 4px;
     width: 100%;
     position: absolute;
-    background-color: #E62429;
+    background-color: var(--color-red);
     left: 0;
     bottom: 0;
 }
@@ -48,10 +59,10 @@
     padding: 16px 24px;
 }
 
-.cards.characters .card .card-body h1{
+.cards.characters .card .card-body p{
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    
 }
+
