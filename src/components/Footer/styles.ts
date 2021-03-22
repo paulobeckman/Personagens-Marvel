@@ -5,6 +5,7 @@ export const Footer = styled.div`
     font-size: 16px;
     padding: 36px;
     background: var(--color-black);
+    margin-top: 50px;
 
     justify-content:center;
     width:100%;

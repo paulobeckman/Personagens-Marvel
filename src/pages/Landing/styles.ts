@@ -8,7 +8,7 @@ export const Boby = styled.div`
         color: var(--color-black);
         text-transform: uppercase;
         justify-content: center;
-        padding-top: 68px;
+        padding-top: 60px;
         padding-bottom: 40px;
     }
 `
@@ -16,7 +16,7 @@ export const Boby = styled.div`
 export const CardsCharacters = styled.div`
         display: grid;
         column-gap: 46px;
-        row-gap: 70px;
+        row-gap: 55px;
         grid-template-columns: repeat(auto-fill,minmax(177px, 177px));
         justify-content: center;
 `

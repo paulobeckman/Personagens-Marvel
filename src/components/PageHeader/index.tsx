@@ -8,17 +8,16 @@ const PageHeader: React.FC = () => {
     return (
         <Header>
             <TopBarContainer>
-                <Logo>
-                    <Link to="/">
-                        <img src={logoImg} alt="Marvel"/>
-                    </Link>
-                </Logo>
-                
                 <OptionNavigation>
                     <Link to="/">
                         <strong>Personagens</strong>
                     </Link>
                 </OptionNavigation>
+                <Logo>
+                    <Link to="/">
+                        <img src={logoImg} alt="Marvel"/>
+                    </Link>
+                </Logo>
             </TopBarContainer>
         </Header>
     );
