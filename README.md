@@ -46,7 +46,7 @@ Projeto desenvolvido como desafio descrito pela [bitspace](https://bitspace.solu
 
 ### Visual
 
-##### Visualize o front-end da aplicação web aqui: [Personagens-Marvel Web](https://proffyclass.netlify.app/)
+##### Visualize o front-end da aplicação web aqui: [Personagens-Marvel Web](parsonagensmarvel.netlify.app)
 
 
 
