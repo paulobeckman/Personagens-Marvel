@@ -73,7 +73,8 @@ const AllCharacters: React.FC = () => {
             </div>
             <Pagination>
                 {pageNumbers.map(number => (
-                    <a onClick={() => setCurrentPage(number)}>{number}</a>
+                    // eslint-disable-next-line
+                    <a onClick={() => setCurrentPage(number)} href="#">{number}</a>
                 ))}
             </Pagination>
             <Footer />
