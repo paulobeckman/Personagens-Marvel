@@ -36,6 +36,8 @@ Os usuário poderão visualizar essas informações do personagem:
 - imagem  
 - descrição
 - quadrinhos que esse personagem aparece
+  - nome
+  - imagem
 
  
 Projeto desenvolvido como desafio descrito pela [bitspace](https://bitspace.solutions/) 
