@@ -16,6 +16,8 @@ interface Characters {
     name: string;
 }
 
+const {REACT_APP_API_KEY, REACT_APP_HASH} = process.env
+
 const AllCharacters: React.FC = () => {
     const [characters, setCharacters] = useState<Characters[]>([])
 
@@ -25,7 +27,7 @@ const AllCharacters: React.FC = () => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            api.get("characters?limit=100&ts=1616200616&apikey=e2ad6feea594422521a37012deadb32b&hash=f41beffda543e26aac87c4d8fc402b02").then(response => {
+            api.get(`characters?limit=100&ts=1616200616&apikey=${REACT_APP_API_KEY}&hash=${REACT_APP_HASH}`).then(response => {
                 setCharacters(response.data.data.results)
             });
         }
