@@ -1,28 +1,26 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom';
+import logoImg from '../../assets/images/logo-marvel.png';
 
-import logoImg from '../../assets/images/logo-marvel.png'
+import {Header, TopBarContainer, Logo, OptionNavigation} from './styles';
 
-import'./styles.css';
-
-interface PageHeaderProps {
-    title: string;
-}
-
-const PageHeader: React.FC<PageHeaderProps> = (props) => {
+const PageHeader: React.FC = () => {
     return (
-        <header className="page-header">
-            <div className="top-bar-container">
-                <Link to="/">
-                    <img src={logoImg} alt="Personagens"/>
-                </Link>
-            </div>
-
-            <div className="header-content">
-                <strong>{props.title}</strong>
-            </div>
-        </header>
+        <Header>
+            <TopBarContainer>
+                <Logo>
+                    <Link to="/">
+                        <img src={logoImg} alt="Marvel"/>
+                    </Link>
+                </Logo>
+                
+                <OptionNavigation>
+                    <Link to="/">
+                        <strong>Personagens</strong>
+                    </Link>
+                </OptionNavigation>
+            </TopBarContainer>
+        </Header>
     );
 }
 
